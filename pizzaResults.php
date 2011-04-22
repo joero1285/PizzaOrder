@@ -1,3 +1,5 @@
+
+<?php require_once('validation.php');?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,13 +33,10 @@ background-repeat:no-repeat;
  *
  * Get the user input from the form
  */
-$email=$_REQUEST['email'];
+
 $toppings=$_REQUEST['toppings'];
 $name=$_REQUEST['firstName']." ".$_REQUEST['lastName'];
-$address=$_REQUEST['address'];
-$city=$_REQUEST['city'];
-$state=$_REQUEST['State'];
-$zip=$_REQUEST['zip'];
+
 $pizzaSize=$_REQUEST['pizzaSize'];
 $sides=$_REQUEST['sides'];
 $pizzaPrice=0;
